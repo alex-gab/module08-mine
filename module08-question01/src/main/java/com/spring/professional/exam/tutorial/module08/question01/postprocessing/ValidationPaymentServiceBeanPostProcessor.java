@@ -19,11 +19,6 @@ public class ValidationPaymentServiceBeanPostProcessor implements BeanPostProces
         return bean;
     }
 
-    @Override
-    public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
-        return BeanPostProcessor.super.postProcessBeforeInitialization(bean, beanName);
-    }
-
     private PaymentService newValidationPaymentServiceProxy(PaymentService paymentService) {
         return (PaymentService) Proxy.newProxyInstance(
                 ApplicationConfig.class.getClassLoader(),

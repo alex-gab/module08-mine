@@ -10,7 +10,7 @@ public class Runner {
         applicationContext.registerShutdownHook();
 
         PaymentService paymentService = applicationContext.getBean(PaymentService.class);
-        PaymentResult paymentResult = paymentService.pay(-1);
+        PaymentResult paymentResult = paymentService.pay(100);
         System.out.println(paymentResult.getAmount());
         System.out.println(paymentResult.getStatus());
     }
