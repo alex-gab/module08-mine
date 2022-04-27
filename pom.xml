@@ -12,6 +12,7 @@
         <module>module08-question01</module>
         <module>module08-question01-aop</module>
         <module>module08-question02-context-state</module>
+        <module>module08-question02-database</module>
     </modules>
 
     <properties>
