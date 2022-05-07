@@ -14,6 +14,7 @@
         <module>module08-question02-context-state</module>
         <module>module08-question02-database</module>
         <module>module08-question03-partial-context</module>
+        <module>module08-question04-transactional</module>
     </modules>
 
     <properties>
